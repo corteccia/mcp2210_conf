@@ -2,6 +2,17 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+typedef struct {
+	uint16_t vid;
+	uint16_t pid;
+} vid_pid_t;
+
+#define SPI_SETTINGS "spi_settings"
+#define CHIP_SETTINGS "chip_settings"
+#define PRODUCT_NAME "product_name"
+#define MANUFACTURER_NAME "manufacturer_name"
+#define KEY_PARAMS "key_parameters"
+
 // SPI settings
 mcp2210_spi_settings_t config_spi_settings =
 {
